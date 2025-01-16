@@ -68,6 +68,12 @@ const goerli: NetworkUserConfig = {
   accounts: [process.env.KEY_GOERLI!],
 }
 
+const inkSepolia: NetworkUserConfig = {
+  url: 'https://rpc-gel-sepolia.inkonchain.com',
+  chainId: 763373,
+  accounts: [process.env.KEY_INKSEPOLIA!],
+}
+
 const eth: NetworkUserConfig = {
   url: 'https://eth.llamarpc.com',
   chainId: 1,
@@ -83,6 +89,7 @@ export default {
     ...(process.env.KEY_MAINNET && { bscMainnet }),
     ...(process.env.KEY_GOERLI && { goerli }),
     ...(process.env.KEY_ETH && { eth }),
+    ...(process.env.KEY_INKSEPOLIA && { inkSepolia }),
     // mainnet: bscMainnet,
   },
   etherscan: {

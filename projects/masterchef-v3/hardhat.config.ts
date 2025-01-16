@@ -38,6 +38,12 @@ const eth: NetworkUserConfig = {
   accounts: [process.env.KEY_ETH!],
 };
 
+const inkSepolia: NetworkUserConfig = {
+  url: 'https://rpc-gel-sepolia.inkonchain.com',
+  chainId: 763373,
+  accounts: [process.env.KEY_INKSEPOLIA!],
+}
+
 const config = {
   defaultNetwork: "hardhat",
   networks: {
@@ -46,6 +52,7 @@ const config = {
     ...(process.env.KEY_MAINNET && { bscMainnet }),
     ...(process.env.KEY_GOERLI && { goerli }),
     ...(process.env.KEY_ETH && { eth }),
+    ...(process.env.KEY_INKSEPOLIA && { inkSepolia }),
     // testnet: bscTestnet,
     // mainnet: bscMainnet,
   },

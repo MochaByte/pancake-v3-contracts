@@ -44,4 +44,24 @@ export const configs = {
     cake: '0x0000000000000000000000000000000000000000',
     smartRouterHelper: '0xdAecee3C08e953Bd5f89A5Cc90ac560413d709E3',
   },
+  inkSepolia: {
+    WNATIVE: '0x4200000000000000000000000000000000000006',
+    nativeCurrencyLabel: 'ETH',
+    v2Factory: '0x56e54E72E22e648A62e1e2a738f24881Db343Ec2',
+    stableFactory: '0x0000000000000000000000000000000000000000',
+    stableInfo: '0x0000000000000000000000000000000000000000',
+    cake: '0x0000000000000000000000000000000000000000',
+    smartRouterHelper: '0x65e871159aEb64375af9188C461479E4D781487e',
+
+
+    // chainId: 763373,
+    // url: "https://rpc-gel-sepolia.inkonchain.com", // Primary RPC endpoint
+    // explorer: "https://explorer-sepolia.inkonchain.com", // Block Explorer
+    // explorerApi: "https://explorer-sepolia.inkonchain.com/api", // Update if there's an API for verifying contracts
+    // explorerApiKey: process.env.BLOCKSCOUT_API_KEY, // No API key provided
+    // ice: "0x0000000000000000000000000000000000000000", // Replace with the correct ICE token address
+    // bridgeDomainId: -1, // Update if needed for bridging
+    // oneDollarInNative: "1000000000000000000", // Update if specific pricing is needed
+    // weth: "0x4200000000000000000000000000000000000006", // Replace with WETH address on Ink Sepolia
+  },
 } as const
